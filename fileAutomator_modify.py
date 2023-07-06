@@ -10,8 +10,8 @@ from watchdog.events import FileSystemEventHandler
 
 # ! FILL IN BELOW
 # ? folder to track e.g. Windows: "C:\\Users\\UserName\\Downloads"
-source_dir = ""
-dest_dir_documents = ""
+source_dir = "Q:\\Documents\\2023 seneca\\sem_02"
+dest_dir_documents = "Q:\\Documents\\2023 seneca\\procedural effects\\personal"
 
 # ? supported Document types
 document_extensions = [".hip"]
