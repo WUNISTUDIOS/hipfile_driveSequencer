@@ -15,7 +15,7 @@ source_dir = "Q:\\Documents\\2023 seneca\\sem_02"
 dest_dir_documents = "Q:\\Documents\\2023 seneca\\procedural effects\\personal"
 
 # ? supported Document types
-document_extensions = [".hip"]
+document_extensions = [".hipnc"]
 
  
 def make_unique(dest, name):
@@ -47,13 +47,11 @@ class MoverHandler(FileSystemEventHandler):
                 name = entry.name
                 self.check_document_files(entry, name)
 
-    
-    def check_document_files(self, entry, name):  # * Checks all Document Files
+def check_document_files(self, entry, name):  # * Checks all Document Files
         for documents_extension in document_extensions:
-            if name.endswith(documents_extension) or name.endswith(documents_extension.upper()):
-                move_file(dest_dir_documents, entry, name)
-                logging.info(f"Moved document file: {name}")
-
+            if name.endswith(documents_extension) or name.endswith(documents_extension.upper())
+move_file(dest_dir_documents, entry, name)
+logging.info(f"Moved document file: {name}")
 
 # ! NO NEED TO CHANGE BELOW CODE
 if __name__ == "__main__":
